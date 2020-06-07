@@ -42,6 +42,9 @@ Plug 'fatih/vim-go'
 " coc插件
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" 主题
+Plug 'ajmwagar/vim-deus'
+
 call plug#end()
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -53,6 +56,14 @@ let g:coc_global_extensions = ['coc-python', 'coc-vimlsp', 'coc-html', 'coc-json
 
 " coc-explorer
 nmap tt :CocCommand explorer<CR>
+
+" Dress up my vim
+set termguicolors
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+color deus
+
+hi NonText ctermfg=gray guifg=grey10
 
 " vim-go
 let g:go_doc_popup_window = 1
