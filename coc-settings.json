@@ -1,0 +1,68 @@
+{
+	"coc.preferences.hoverTarget": "preview",
+	"coc.preferences.enableFloatHighlight": true,
+	"coc.preferences.snippetStatusText": "Ⓢ ",
+	"coc.preferences.extensionUpdateCheck": "daily",
+	"explorer.width": 38,
+	"explorer.quitOnOpen": true,
+	"explorer.sources": [
+		{
+			"name": "buffer",
+			"expand": false
+		},
+		{
+			"name": "file",
+			"expand": true
+		}
+	],
+	"explorer.file.column.indent.indentLine": true,
+	"explorer.file.showHiddenFiles": true,
+	"explorer.icon.enableNerdfont": true,
+	"explorer.file.column.git.showIgnored": true,
+	"explorer.keyMappingMode": "none",
+	"explorer.buffer.showHiddenBuffers": false,
+	"explorer.keyMappings": {
+		"i": false,
+		"?": "help",
+		"l": ["expandable?", "expand", "open"],
+		"J": ["toggleSelection", "nodeNext"],
+		"K": ["toggleSelection", "nodePrev"],
+		"o": ["expandable?", "collapse", "open"],
+		"a": "addFile",
+		"A": "addDirectory",
+		"e": "open",
+		"t": "open:tab",
+		"<bs>": "gotoParent",
+		"y": "copyFilepath",
+		"Y": "copyFilename",
+		"c": "copyFile",
+		"x": "cutFile",
+		"p": "pasteFile",
+		"d": "delete",
+		"D": "deleteForever",
+		"r": "rename",
+		".": "toggleHidden",
+		"R": "refresh",
+		"q": "quit",
+		"<esc>": "esc",
+		"X": "systemExecute",
+		"f": "search",
+		"F": "searchRecursive",
+		"gf": "gotoSource:file",
+		"gb": "gotoSource:buffer",
+		"[[": "sourcePrev",
+		"]]": "sourceNext"
+	},
+	"languageserver": {
+		"golang": {
+			"command": "gopls",
+			"rootPatterns": ["go.mod"],
+			"filetypes": ["go"],
+			"initializationOptions": {
+				"gocodeCompletionEnabled": true,
+				"diagnosticsEnabled": true,
+				"lintTool": "golint"
+			}
+		}
+	}
+}
