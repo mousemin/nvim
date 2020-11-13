@@ -1,6 +1,4 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-"                                   Global Settings
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""" "                                   Global Settings """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " 显示行号
 set number
 " 显示相对行号
@@ -19,10 +17,22 @@ set autoindent
 " 剪切版
 set clipboard+=unnamedplus
 " 设置python路径
-let g:python_host_prog="/usr/local/bin/python"
-let g:python3_host_prog="/usr/local/bin/python3"
+let g:python_host_prog="/usr/bin/python"
+let g:python3_host_prog="/usr/bin/python3"
 " 设置ruby路径
 let g:ruby_host_prog="/usr/bin/ruby"
+
+" ===
+" === Tab management
+" ===
+" Create a new tab with tu
+noremap tu :tabe<CR>
+" Move around tabs with tn and ti
+noremap tn :-tabnext<CR>
+noremap ti :+tabnext<CR>
+" Move the tabs with tmn and tmi
+noremap tmn :-tabmove<CR>
+noremap tmi :+tabmove<CR>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                 Plugs
